@@ -7,47 +7,46 @@ import {messageNotificationPermissionSetup} from './utils/notification'
 // styles
 import './index.css'
 
+import { lat } from './utils/location'
+
 
 const App = () => {
 
-let loc: any = null;
+//let loc: any = null;
 let show = document.visibilityState !== "visible";
 
+const [latitude, setLatitude] = useState<any>('')
+const [longitude, setLongitude] = useState<any>('')
+
+function getPosition() {
+  lat(function (latitude: any, longitude:any) {
+     // alert("lat: " + latitude + ", lon: " + longitude);
+setLatitude(latitude)
+setLongitude(longitude)
+  });
+}
 
 useEffect(() => {
   // asking for permission to send notifications
   messageNotificationPermissionSetup(Notification)
-}, [])
-
-// loc = navigator.geolocation.getCurrentPosition(success, error, options)
-
-useEffect(() => {
-
-  // if (loc) {
-  //   setLocation(loc);
-  // }
-
-  //  (loc != null) ? setLocation(loc) : setLocation(null)
-  // console.log(location)
+  getPosition()
+ 
 }, [])
 
 
   return (
-    <div>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-6 text-center">
+        <p>Latitude: {latitude}</p> 
+    <p>Longitude: {longitude}</p> 
  <UserInfo />
-   <SendNotification />
-<>
-
-
-
-{/* { location &&
-<>
-<p>Latitude: {location.Latitude}</p>
-<p>Longitude: {location.Longitude}</p>
-</>
-} */}
-
-</>
+        </div>
+        <div className="col-md-6">
+        <SendNotification />
+        </div>
+      </div>
+  
     </div>
   );
 }
