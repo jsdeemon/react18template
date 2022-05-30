@@ -5,6 +5,7 @@
 - sending push notifications to users from frontend 
 ### Usage:
 ```javascript 
+getFingerprint() // generatng web browser fingerprint
 messageNotificationPermissionSetup(Notification) // Notification functionality setup
 showNotification(title, icon, body, delay) // shows notifivation for users with delay
 getLanguage() // returns language
