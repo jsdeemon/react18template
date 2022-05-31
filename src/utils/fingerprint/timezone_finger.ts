@@ -1,6 +1,6 @@
 export function fingerprint_timezone() {
     "use strict";
-    var strOnError, dtDate, numOffset, numGMTHours, numOut;
+    let strOnError: string, dtDate: any, numOffset: any, numGMTHours: any, numOut: any;
 
     strOnError = "Error";
     dtDate = null;
