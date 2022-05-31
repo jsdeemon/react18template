@@ -1,6 +1,6 @@
 export function fingerprint_display() {
     "use strict";
-    var strSep, strPair, strOnError, strScreen, strDisplay, strOut;
+    let strSep: any, strPair: any, strOnError: any, strScreen: any, strDisplay: any, strOut: any;
 
     strSep = "|";
     strPair = "=";
