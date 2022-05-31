@@ -1,6 +1,6 @@
 export function fingerprint_os() {
     "use strict";
-    var strSep, strOnError, strUserAgent, strPlatform, strOS, strOSBits, strOut;
+    let strSep: any, strOnError: any, strUserAgent: any, strPlatform: any, strOS: string | null, strOSBits: any, strOut: string | null;
 
     strSep = "|";
     strOnError = "Error";
