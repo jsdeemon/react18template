@@ -1,6 +1,6 @@
 export function fingerprint_fonts() {
     "use strict";
-    var strOnError, style, fonts, count, template, fragment, divs, i, font, div, body, result, e;
+    let strOnError: string, style: any, fonts: any, count: number, template: any, fragment: any, divs: any, i: number, font: any, div: any, body: any, result: any, e: any;
 
     strOnError = "Error";
     style = null;
