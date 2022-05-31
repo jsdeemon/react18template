@@ -1,4 +1,4 @@
-# RaactJS 18 template (webpack + typescript) + features
+# ReactJS 18 template (webpack + typescript) + features
 ### Features:
 - browser fingerprinting
 - getting user geolocation
