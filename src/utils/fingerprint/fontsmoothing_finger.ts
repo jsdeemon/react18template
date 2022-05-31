@@ -1,3 +1,9 @@
+declare global {
+    interface Screen {
+       fontSmoothingEnabled?: any;
+    }
+}
+
 export function fingerprint_fontsmoothing() {
   
     let strOnError: any, strFontSmoothing: any, canvasNode: any, ctx: any, i: number, j: number, imageData: any, alpha: any, strOut: any;
