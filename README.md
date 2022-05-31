@@ -1,4 +1,5 @@
 # ReactJS 18 template (webpack + typescript) + features
+## This is minimal start template based on ReactJs 18 with some features
 ### Features:
 - browser fingerprinting
 - getting user geolocation
