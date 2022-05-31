@@ -1,6 +1,6 @@
 export function fingerprint_fontsmoothing() {
     "use strict";
-    var strOnError, strFontSmoothing, canvasNode, ctx, i, j, imageData, alpha, strOut;
+    let strOnError: any, strFontSmoothing: any, canvasNode: any, ctx: any, i: number, j: number, imageData: any, alpha: any, strOut: any;
 
     strOnError = "Unknown";
     strFontSmoothing = null;
@@ -14,7 +14,7 @@ export function fingerprint_fontsmoothing() {
         strFontSmoothing = screen.fontSmoothingEnabled;
     } else {
         try {
-			fontsmoothing = "false";
+			strFontSmoothing = "false";
             canvasNode = document.createElement('canvas');
             canvasNode.width = "35";
             canvasNode.height = "35";
