@@ -3,7 +3,7 @@
 ### Features:
 - browser fingerprinting
 - getting user geolocation
-- sending push notifications to users from frontend 
+- sending push notifications to users
 ### Usage examples:
 ```javascript 
 getFingerprint() // generatng web browser fingerprint
