@@ -1,6 +1,12 @@
+declare global {
+    interface Navigator {
+        cpuClass?: any;
+    }
+}
+
 export function fingerprint_useragent() {
     "use strict";
-    var strSep, strTmp, strUserAgent, strOut;
+    let strSep: string, strTmp: string | null, strUserAgent: any, strOut: string | null;
 
     strSep = "|";
     strTmp = null;
