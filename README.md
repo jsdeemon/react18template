@@ -1,9 +1,9 @@
 # RaactJS 18 template (webpack + typescript) + features
 ### Features:
-- browser info gathering (language, OS, browserName, Region, City, etc.)
-- getting user location
+- browser fingerprinting
+- getting user geolocation
 - sending push notifications to users from frontend 
-### Usage:
+### Usage examples:
 ```javascript 
 getFingerprint() // generatng web browser fingerprint
 messageNotificationPermissionSetup(Notification) // Notification functionality setup
