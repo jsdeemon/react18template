@@ -1,6 +1,12 @@
+declare global {
+    interface Navigator {
+        plugins?: any;
+    }
+}
+
 export function fingerprint_silverlight() {
    
-    let strOnError: string, objControl: any, objPlugin: any, strSilverlightVersion: string | null, strOut: string | null;
+    let strOnError: string, objControl: any, objPlugin: any, strSilverlightVersion: any, strOut: string | null;
 
     strOnError = "Error";
     objControl = null;
