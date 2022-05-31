@@ -1,6 +1,6 @@
 export function fingerprint_silverlight() {
     "use strict";
-    var strOnError, objControl, objPlugin, strSilverlightVersion, strOut;
+    let strOnError: string, objControl: any, objPlugin: any, strSilverlightVersion: string | null, strOut: string | null;
 
     strOnError = "Error";
     objControl = null;
