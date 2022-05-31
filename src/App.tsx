@@ -5,13 +5,10 @@ import UserInfo from './components/UserInfo'
 // utils
 import {messageNotificationPermissionSetup} from './utils/notification'
 import { getFingerprint } from './utils/fingerprint/createFingerprint'
-
-
-
+import { lat } from './utils/location'
 // styles
 import './index.css'
 
-import { lat } from './utils/location'
 
 
 const App = () => {
