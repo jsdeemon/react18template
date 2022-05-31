@@ -1,6 +1,6 @@
 export function fingerprint_java() {
     "use strict";
-    var strOnError, strJavaEnabled, strOut;
+    let strOnError: any, strJavaEnabled: any, strOut: any;
 
     strOnError = "Error";
     strJavaEnabled = null;
