@@ -1,6 +1,15 @@
+declare global {
+    interface Navigator {
+        browserLanguage?: any;
+        systemLanguage?: any;
+        userLanguage?: any;
+    }
+}
+
+
 export function fingerprint_language() {
     "use strict";
-    var strSep, strPair, strOnError, strLang, strTypeLng, strTypeBrLng, strTypeSysLng, strTypeUsrLng, strOut;
+    let strSep: any, strPair: any, strOnError: any, strLang: any, strTypeLng: any, strTypeBrLng: any, strTypeSysLng: any, strTypeUsrLng: any, strOut: any;
 
     strSep = "|";
     strPair = "=";
