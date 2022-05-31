@@ -1,5 +1,5 @@
 export function fingerprint_fontsmoothing() {
-    "use strict";
+  
     let strOnError: any, strFontSmoothing: any, canvasNode: any, ctx: any, i: number, j: number, imageData: any, alpha: any, strOut: any;
 
     strOnError = "Unknown";

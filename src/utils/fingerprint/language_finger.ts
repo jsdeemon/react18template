@@ -8,7 +8,7 @@ declare global {
 
 
 export function fingerprint_language() {
-    "use strict";
+  
     let strSep: any, strPair: any, strOnError: any, strLang: any, strTypeLng: any, strTypeBrLng: any, strTypeSysLng: any, strTypeUsrLng: any, strOut: any;
 
     strSep = "|";

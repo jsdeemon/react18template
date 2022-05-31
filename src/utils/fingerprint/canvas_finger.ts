@@ -1,5 +1,5 @@
 export function fingerprint_canvas() {
-    "use strict";
+
     let strOnError: any, canvas: any, strCText: any, strText: any, strOut: any;
 
     strOnError = "Error";

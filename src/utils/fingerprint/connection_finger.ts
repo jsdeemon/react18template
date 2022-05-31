@@ -1,5 +1,4 @@
 export function fingerprint_connection() {
-    "use strict";
     let strOnError: any, strConnection: any, strOut: any;
 
     strOnError = "N/A";

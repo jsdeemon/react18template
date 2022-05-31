@@ -5,7 +5,7 @@ declare global {
 }
 
 export function fingerprint_useragent() {
-    "use strict";
+    
     let strSep: string, strTmp: string | null, strUserAgent: any, strOut: string | null;
 
     strSep = "|";

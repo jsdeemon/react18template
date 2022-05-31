@@ -1,5 +1,5 @@
 export function fingerprint_touch() {
-    "use strict";
+    
     let bolTouchEnabled: boolean, bolOut: boolean | null;
 
     bolTouchEnabled = false;

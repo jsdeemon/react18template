@@ -25,7 +25,7 @@ declare global {
 }
 
 export function fingerprint_truebrowser() {
-    "use strict";
+    
     let strBrowser: any, strUserAgent: any, strOut: any;
 
     strBrowser = "Unknown";
