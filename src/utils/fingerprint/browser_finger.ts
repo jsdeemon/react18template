@@ -1,6 +1,6 @@
 export function fingerprint_browser() {
     "use strict";
-    var strOnError, strUserAgent, numVersion, strBrowser, strOut;
+    let strOnError: any, strUserAgent: any, numVersion: any, strBrowser: any, strOut: any;
 
     strOnError = "Error";
     strUserAgent = null;

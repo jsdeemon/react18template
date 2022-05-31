@@ -1,6 +1,6 @@
 export function fingerprint_cookie() {
     "use strict";
-    var strOnError, bolCookieEnabled, bolOut;
+    let strOnError: any, bolCookieEnabled: any, bolOut: any;
 
     strOnError = "Error";
     bolCookieEnabled = null;
