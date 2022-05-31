@@ -1,6 +1,32 @@
+declare global {
+	interface Navigator {
+        savePreferences?: any;
+        taintEnabled?: any;
+        accentColorName?: any;
+		__ice_version?: any;
+    }
+
+    interface Window {
+		ScriptEngine?: any;
+		opera?: any;
+		chrome?: any;
+		atob?: any;
+		createPopup?: any;
+		attachEvent?: any;
+		InstallTrigger?: any;
+		XDomainRequest?: any;
+
+	}
+
+	interface Document {
+		layers?: any;
+		classes?: any;
+	}
+}
+
 export function fingerprint_truebrowser() {
     "use strict";
-    var strBrowser, strUserAgent, strOut;
+    let strBrowser: any, strUserAgent: any, strOut: any;
 
     strBrowser = "Unknown";
     strUserAgent = null;
@@ -19,9 +45,9 @@ export function fingerprint_truebrowser() {
 		strBrowser = "OmniWeb 4.5+";
 	} else if (navigator.__ice_version) {
 		strBrowser = "ICEBrowser";
-	} else if (window.ScriptEngine && ScriptEngine().indexOf("InScript") + 1 && document.createElement) {
+	} else if (window.ScriptEngine && window.ScriptEngine().indexOf("InScript") + 1 && document.createElement) {
 		strBrowser = "iCab 3+";
-	} else if (window.ScriptEngine && ScriptEngine().indexOf("InScript") + 1) {
+	} else if (window.ScriptEngine && window.ScriptEngine().indexOf("InScript") + 1) {
 		strBrowser = "iCab 2-";
 	} else if (strUserAgent.indexOf("hotjava") + 1 && (navigator.accentColorName) === "undefined") {
 		strBrowser = "HotJava";
@@ -51,13 +77,13 @@ export function fingerprint_truebrowser() {
 		strBrowser = "Clue browser";
 	} else if (navigator.product && navigator.product.indexOf("Hv") === 0) {
 		strBrowser = "Tkhtml Hv3+";
-	} else if (typeof InstallTrigger !== 'undefined') {
+	} else if (typeof window.InstallTrigger !== 'undefined') {
 		strBrowser = "Firefox";
 	} else if (window.atob) {
 		strBrowser = "Internet Explorer 10+";
-	} else if (XDomainRequest && window.performance) {
+	} else if (window.XDomainRequest && window.performance) {
 		strBrowser = "Internet Explorer 9";
-	} else if (XDomainRequest) {
+	} else if (window.XDomainRequest) {
 		strBrowser = "Internet Explorer 8";
 	} else if (document.documentElement && document.documentElement.style.maxHeight !== "undefined") {
 		strBrowser = "Internet Explorer 7";//xxxxx
