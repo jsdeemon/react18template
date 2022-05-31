@@ -12,9 +12,11 @@ import { fingerprint_silverlight } from './silverlight_finger'
 import { fingerprint_java } from './java_finger'
 import { fingerprint_useragent } from './useragent_finger'
 import { fingerprint_ram } from './ram_finger'
+import { fingerprint_cpu } from './cpu_finger'
+import { fingerprint_gpu } from './gpu_finger'
 // cybr53 hash function
 import { cyrb53 } from './cybr53hash'
-import { fingerprint_cpu } from './cpu_finger';
+
 
 
 export function getFingerprint() {
@@ -35,8 +37,9 @@ export function getFingerprint() {
     const useragent = fingerprint_useragent()
     const ram = fingerprint_ram()
     const cpu = fingerprint_cpu()
+    const gpu = fingerprint_gpu()
 
-    const string = browser + canvas + display + fonts + fontsmoothing + os + language + timezone + formfields + touch + silverlight + java + useragent + ram + cpu
+    const string = browser + canvas + display + fonts + fontsmoothing + os + language + timezone + formfields + touch + silverlight + java + useragent + ram + cpu + gpu
     
     hash = cyrb53(string)
     return hash;

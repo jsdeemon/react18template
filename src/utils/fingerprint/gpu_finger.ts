@@ -15,7 +15,7 @@ export function fingerprint_gpu() {
     } catch (err) {
         return strOnError
     }
-    console.log(gpu)
+  
     return gpu 
 
 }

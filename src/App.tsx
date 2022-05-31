@@ -16,7 +16,6 @@ import { lat } from './utils/location'
 
 const App = () => {
 
-//let loc: any = null;
 let show = document.visibilityState !== "visible";
 
 const [latitude, setLatitude] = useState<any>('')
@@ -32,23 +31,8 @@ setLongitude(longitude)
 }
 
 console.log(getFingerprint())
-// returns CPU number
-// console.log(navigator.hardwareConcurrency)
-// console.log(navigator.deviceMemory)
 
- // Initialize the agent at application startup.
-//  const fpPromise = import('https://openfpcdn.io/fingerprintjs/v3')
-//  .then(FingerprintJS => FingerprintJS.load())
-
-// // Get the visitor identifier when you need it.
-// fpPromise
-//  .then(fp => fp.get())
-//  .then(result => {
-//    // This is the visitor identifier:
-//    const visitorId = result.visitorId
-//    console.log(visitorId)
-//  })
-
+// console.log(navigator.mediaDevices)
 
 useEffect(() => {
   // asking for permission to send notifications
