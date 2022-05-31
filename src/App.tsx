@@ -7,6 +7,7 @@ import {messageNotificationPermissionSetup} from './utils/notification'
 import { getFingerprint } from './utils/fingerprint/createFingerprint'
 
 
+
 // styles
 import './index.css'
 
@@ -31,6 +32,9 @@ setLongitude(longitude)
 }
 
 console.log(getFingerprint())
+// returns CPU number
+// console.log(navigator.hardwareConcurrency)
+// console.log(navigator.deviceMemory)
 
  // Initialize the agent at application startup.
 //  const fpPromise = import('https://openfpcdn.io/fingerprintjs/v3')
