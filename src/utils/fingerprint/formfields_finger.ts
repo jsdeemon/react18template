@@ -1,6 +1,6 @@
 export function fingerprint_formfields() {
     "use strict";
-    var i, j, numOfForms, numOfInputs, strFormsInPage, strFormsInputsData, strInputsInForm, strTmp, strOut;
+    let i: number, j: number, numOfForms: number, numOfInputs: number, strFormsInPage: any, strFormsInputsData: any, strInputsInForm: any, strTmp: string, strOut: string;
 
     i = 0;
     j = 0;
